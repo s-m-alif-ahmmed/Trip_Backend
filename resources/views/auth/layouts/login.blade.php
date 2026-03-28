@@ -11,7 +11,7 @@
                     Admin Login
                 </span>
                 <div class="wrap-input100 validate-input" data-bs-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email" placeholder="Email" value="{{ old('email') }}">
+                    <input class="input100" type="text" name="email" placeholder="Email" value="admin@gmail.com">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <i class="zmdi zmdi-email" aria-hidden="true"></i>
@@ -21,7 +21,7 @@
                     @enderror
                 </div>
                 <div class="wrap-input100 validate-input" data-bs-validate="Password is required">
-                    <input class="input100" type="password" name="password" placeholder="Password" value="" >
+                    <input class="input100" type="password" name="password" placeholder="Password" value="12345678" >
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <i class="zmdi zmdi-lock" aria-hidden="true"></i>
