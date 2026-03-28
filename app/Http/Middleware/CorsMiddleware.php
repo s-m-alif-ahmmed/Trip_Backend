@@ -20,8 +20,8 @@ class CorsMiddleware
         $allowedOrigins = [
             'http://localhost:5173',                      // Local React dev server
             'http://localhost:3000',                      // Local React dev server
-            'https://saalah.vercel.app',       // Live React app
-            'https://saalah27.thewarriors.team',     // Laravel backend (optional if you need internal API access)
+            'https://trip.smalifahmmed.com',
+            'https://trip-api.smalifahmmed.com/',
         ];
 
         $origin = $request->headers->get('Origin');
