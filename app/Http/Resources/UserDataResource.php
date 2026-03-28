@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Http\Resources;
+
+use App\Traits\AllTraits;
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class UserDataResource extends JsonResource
+{
+    use AllTraits;
+
+    /**
+     * Transform the resource into an array.
+     *
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        return [
+            'id'        => $this->id,
+            'name'      => $this->name,
+            'email'     => $this->email,
+            'number'    => $this->number,
+            'address'   => $this->address,
+            'avatar'    => $this->fullImageUrlForApi($this->avatar) ?? null,
+        ];
+    }
+}
