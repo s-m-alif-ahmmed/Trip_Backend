@@ -8,8 +8,8 @@ return [
     'allowed_origins' => [
         'http://localhost:5173',
         'http://localhost:3000',
-        'https://saalah.vercel.app',
-        'https://saalah27.thewarriors.team',
+        'https://trip.smalifahmmed.com',
+        'https://trip-api.smalifahmmed.com/',
     ],
 
     'allowed_origins_patterns' => [],
